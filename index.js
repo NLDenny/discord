@@ -29,7 +29,7 @@ fs.readdir("./commands/", (err, files) => {
     })
 });
 
-client.login(botConfig.token);
+client.login(process.env.token);
 
 client.on('guildMemberAdd', async guildMember => {
     var i = "894003439145738303";   
@@ -132,5 +132,3 @@ function activity(){ // Defines the function
     }, 1000); // Waits 1 second
 }
 activity(); // Runs the function again
-
-bot.login(process.env.token);
