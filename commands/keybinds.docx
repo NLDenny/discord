@@ -1,0 +1,12 @@
+const discord = require("discord.js");
+
+module.exports.run = async(bot, message, args) =>{
+
+    message.delete()
+    return message.channel.send("```Voertuig``` \nF1 -> voertuig deuren = Auto controles (motorkap, motor, kofferbak, deuren \nF1 -> voertuig = Auto extra's, flip en geef sleutels (tijdelijk) \n-, = backspace = knipperlichten \nC = achterom kijken \nE = claxon \nF = uitstappen \nG = gordel \nH = koplampen auto \nL = auto op slot \nQ = frequentie radio veranderen \nX = tijdrit race annuleren \nTab = kofferbak \n/engine = motor aan/uit \n/radiocar = aangepaste radio in voertuigen \n\n```Karakter``` \nF1 = menu (ook in het huis) \nF8 = afsluiten \nF11 = vizier op en af \nF12 = screenshot \nHOME = server status \nTAB = inventaris \nCTRL = hurken \nB = richten \nC = terugkijken \nM = telefoon \nT = tekst \nN = praten \nQ = dekking zoeken \nX = animatie annuleren \n~ = afstand veranderen spraak \n\n```Commando's``` \n/911a = anoniem aangifte doen bij de politie \n/911 = een politieaangifte doen \n/a handen omhoog = handen omhoog \n/am = animatie menu \n/binds = om het bind menu te openen \n/helm = je helm / pet afzetten / opzetten \n/frequentie = de frequentie van de porto aanpassen \n/bril = om je bril af / op te zetten \n/logout = terug naar het personagemenu \n/radio = je radio openen en sluiten \n/report = om hulp vragen aan een personeelslid \n/ring = iemand uitnodigen in je huis \n/mask = je masker afzetten / afzetten \n/money = om je geld te zien \n/me = in karakter beschrijving actie \n/ooc = uit karakter")
+
+}
+
+module.exports.help = {
+    name: "binds"
+}
