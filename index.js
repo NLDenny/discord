@@ -1,6 +1,6 @@
 const discord = require("discord.js");
 const botConfig = require("./botconfig.json");
-const channelId = '894008358212878356'
+const channelId = '894008509878902794'
 const targetChannelId = '894004070594011176' 
 
 const fs = require("fs");
@@ -41,10 +41,10 @@ client.on('guildMemberAdd', async guildMember => {
 client.on('guildMemberAdd', (member) => {
     console.log(member)
 
-    //const message = `Welcome <@${member.id}> to Outlaws&Bikers! Please read ${member.guild.channels.cache.get(targetChannelId).toString()} and we hope you have a great time.`
+    const message = `Welcome <@${member.id}> to Outlaws&Bikers! Please read ${member.guild.channels.cache.get(targetChannelId).toString()} and we hope you have a great time.`
 
-    //const channel = member.guild.channels.cache.get(channelId)
-    //channel.send(message)
+    const channel = member.guild.channels.cache.get(channelId)
+    channel.send(message)
 });
 
 client.on("message", async message =>{
